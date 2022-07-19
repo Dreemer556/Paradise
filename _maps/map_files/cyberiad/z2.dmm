@@ -1381,17 +1381,17 @@
 	},
 /area/centcom/specops)
 "bsp" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 2 Office";
-	dir = 1;
-	network = list("CentComm")
+/obj/structure/bed,
+/obj/item/bedsheet/syndie,
+/mob/living/carbon/human{
+	name = "Василий Карпенко"
 	},
-/obj/item/twohanded/required/kirbyplants,
 /turf/unsimulated/floor{
 	dir = 8;
-	icon_state = "darkblue"
+	icon = 'icons/turf/floors/carpet_black.dmi';
+	icon_state = "carpet"
 	},
-/area/centcom/zone2)
+/area/syndicate_mothership)
 "bst" = (
 /obj/structure/window/reinforced{
 	color = "red"
@@ -1667,15 +1667,12 @@
 /turf/unsimulated/wall/abductor,
 /area/abductor_ship)
 "bJB" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Jail 3";
-	dir = 10;
-	network = list("CentComm")
+/obj/item/stack/sheet/animalhide/monkey{
+	desc = "й";
+	name = "Who?"
 	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/jail)
+/turf/space,
+/area/space)
 "bJJ" = (
 /obj/structure/table/reinforced,
 /obj/item/mecha_parts/mecha_equipment/weapon/energy/laser/heavy,
@@ -2273,11 +2270,6 @@
 /obj/structure/sign/poster/official/random{
 	pixel_y = -30
 	},
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1 Gamming Room";
-	dir = 1;
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	dir = 4;
 	icon_state = "rampbottom"
@@ -2372,17 +2364,6 @@
 	icon_state = "carpet"
 	},
 /area/syndicate_mothership)
-"crq" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1 Gamming Room 2";
-	dir = 1;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	dir = 4;
-	icon_state = "darkgreen"
-	},
-/area/centcom/zone1)
 "crS" = (
 /turf/unsimulated/wall/fakeglass{
 	dir = 9;
@@ -2495,16 +2476,6 @@
 /area/centcom/zone1)
 "cBc" = (
 /obj/machinery/computer/arcade,
-/turf/unsimulated/floor{
-	icon_state = "sepia"
-	},
-/area/centcom/zone1)
-"cBz" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1-2";
-	network = list("CentComm")
-	},
-/obj/structure/chair,
 /turf/unsimulated/floor{
 	icon_state = "sepia"
 	},
@@ -2808,6 +2779,9 @@
 "cIb" = (
 /obj/structure/bed,
 /obj/item/bedsheet/syndie,
+/mob/living/carbon/human{
+	name = "Антон Губенюк"
+	},
 /turf/unsimulated/floor{
 	dir = 8;
 	icon = 'icons/turf/floors/carpet_black.dmi';
@@ -3221,11 +3195,6 @@
 	},
 /area/wizard_station)
 "cYu" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Special Ops. Armory 3";
-	dir = 4;
-	network = list("CentComm")
-	},
 /obj/machinery/vending/security,
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -4119,16 +4088,6 @@
 	icon_state = "darkred"
 	},
 /area/adminconstruction)
-"dJi" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Jail 7";
-	dir = 10;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "stage_bleft"
-	},
-/area/centcom/jail)
 "dJo" = (
 /turf/space,
 /turf/unsimulated/floor{
@@ -4392,10 +4351,6 @@
 "dWu" = (
 /obj/structure/table/wood,
 /obj/item/toy/cards/deck,
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1 Droom";
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	icon_state = "carpet"
 	},
@@ -4518,11 +4473,6 @@
 /area/syndicate_mothership)
 "eac" = (
 /obj/machinery/atmospherics/pipe/simple/hidden,
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Medical Block 2";
-	dir = 4;
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	dir = 9;
 	icon_state = "darkblue"
@@ -5171,16 +5121,6 @@
 	icon_state = "rampbottom"
 	},
 /area/centcom/zone1)
-"eCq" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1 Droom 2";
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "grimy"
-	},
-/area/centcom/zone1)
 "eCs" = (
 /obj/structure/table/holotable,
 /turf/simulated/floor/holofloor{
@@ -5215,11 +5155,6 @@
 	},
 /area/space)
 "eFa" = (
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Medical Block";
-	dir = 8;
-	network = list("CentComm")
-	},
 /obj/structure/closet/wardrobe/chemistry_white,
 /obj/item/storage/bag/chemistry,
 /obj/item/storage/bag/chemistry,
@@ -5278,29 +5213,10 @@
 /area/centcom/evac)
 "eHe" = (
 /obj/structure/flora/rock,
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Hallway";
-	dir = 4;
-	network = list("CentComm")
-	},
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/unsimulated/floor{
 	icon_state = "grass1";
 	name = "grass"
-	},
-/area/centcom/specops)
-"eHk" = (
-/obj/item/twohanded/required/kirbyplants,
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Armory Level 1";
-	dir = 1;
-	network = list("CentComm")
-	},
-/obj/machinery/status_display{
-	pixel_y = -30
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
 	},
 /area/centcom/specops)
 "eHx" = (
@@ -5609,16 +5525,6 @@
 	icon_state = "white"
 	},
 /area/centcom/evac)
-"eQm" = (
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Ready Room 2";
-	dir = 6;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/specops)
 "eQF" = (
 /obj/structure/chair/comfy/brown{
 	dir = 8
@@ -6596,17 +6502,6 @@
 	tag = "icon-floor"
 	},
 /area/admin)
-"fuE" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1 Medbay";
-	network = list("CentComm")
-	},
-/obj/item/twohanded/required/kirbyplants,
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "bcarpet05"
-	},
-/area/centcom/zone1)
 "fuP" = (
 /turf/unsimulated/wall,
 /area/centcom/specops)
@@ -7219,7 +7114,7 @@
 	dir = 4;
 	tag = "icon-bulb1 (EAST)"
 	},
-/obj/item/twohanded/required/kirbyplants,
+/obj/structure/closet/secure_closet/syndicate_officer,
 /turf/unsimulated/floor{
 	dir = 8;
 	icon = 'icons/turf/floors/carpet_black.dmi';
@@ -8034,10 +7929,6 @@
 /obj/structure/sign/poster/official/random{
 	pixel_y = 30
 	},
-/obj/machinery/camera{
-	c_tag = "CentComm Arrivals 3";
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	dir = 1;
 	icon_state = "whitehall";
@@ -8097,11 +7988,6 @@
 /area/secret/gaybar)
 "gGT" = (
 /obj/machinery/vending/cigarette,
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1 Droom 5";
-	dir = 8;
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	icon = 'icons/turf/floors/carpet_black.dmi';
 	icon_state = "carpet"
@@ -8598,11 +8484,6 @@
 /area/secret/gaybar)
 "hdm" = (
 /obj/item/twohanded/required/kirbyplants,
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Armory Level 2";
-	dir = 1;
-	network = list("CentComm")
-	},
 /obj/machinery/status_display{
 	pixel_y = -30
 	},
@@ -9050,8 +8931,15 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/item/radio/intercom/syndicate{
-	pixel_y = 25
+/obj/machinery/door_control{
+	id = "commandroom";
+	name = "Command Room Blastdoor";
+	pixel_y = 28
+	},
+/obj/machinery/door_control{
+	id = "syndicate_bridge";
+	name = "Bridge Blastdoor";
+	pixel_y = 38
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -9156,11 +9044,6 @@
 	},
 /area/centcom/evac)
 "hvs" = (
-/obj/machinery/camera{
-	c_tag = "CentComm ERT GYM";
-	dir = 8;
-	network = list("CentComm")
-	},
 /obj/structure/weightmachine/weightlifter,
 /turf/unsimulated/floor{
 	icon_state = "carpet"
@@ -10428,18 +10311,6 @@
 	tag = "icon-floor"
 	},
 /area/admin)
-"isN" = (
-/obj/machinery/camera{
-	c_tag = "Centaral Command Supreme Court";
-	dir = 1;
-	network = list("SS13","CentComm");
-	pixel_x = 12;
-	pixel_y = -6
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/court)
 "isW" = (
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/chair/sofa/left{
@@ -10471,10 +10342,6 @@
 /area/syndicate_mothership)
 "iuh" = (
 /obj/item/twohanded/required/kirbyplants,
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Armory Level 3";
-	network = list("CentComm")
-	},
 /obj/machinery/status_display{
 	pixel_y = 30
 	},
@@ -10956,19 +10823,6 @@
 	icon_state = "sepia"
 	},
 /area/centcom/zone1)
-"iLZ" = (
-/obj/structure/sign/poster/official/random{
-	pixel_y = 30
-	},
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1-3";
-	network = list("CentComm")
-	},
-/obj/structure/chair,
-/turf/unsimulated/floor{
-	icon_state = "sepia"
-	},
-/area/centcom/zone1)
 "iMg" = (
 /obj/structure/chair,
 /turf/unsimulated/floor{
@@ -11256,15 +11110,6 @@
 	tag = "icon-dark"
 	},
 /area/syndicate_mothership)
-"iXG" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1 Check point";
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "white"
-	},
-/area/centcom/zone1)
 "iXH" = (
 /obj/structure/window/reinforced{
 	dir = 1
@@ -11674,32 +11519,6 @@
 	icon_state = "bcircuit"
 	},
 /area/centcom/zone2)
-"jpb" = (
-/obj/structure/bookcase,
-/obj/item/book/manual/security_space_law{
-	pixel_x = 3
-	},
-/obj/item/book/manual/security_space_law{
-	pixel_x = 3
-	},
-/obj/item/book/manual/security_space_law{
-	pixel_x = 3
-	},
-/obj/item/book/manual/security_space_law{
-	pixel_x = 3
-	},
-/obj/item/book/manual/security_space_law{
-	pixel_x = 3
-	},
-/obj/machinery/camera{
-	c_tag = "CentComm Jail 8";
-	dir = 8;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "wood"
-	},
-/area/centcom/jail)
 "jpc" = (
 /obj/structure/window/full/reinforced{
 	layer = 2
@@ -12149,25 +11968,6 @@
 /obj/item/clothing/glasses/sunglasses,
 /turf/unsimulated/beach/sand,
 /area/ninja/holding)
-"jGI" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Special Ops. Armory 1";
-	dir = 1;
-	network = list("CentComm")
-	},
-/obj/machinery/door/poddoor/shutters{
-	armor = list("melee" = 95, "bullet" = 95, "laser" = 95, "energy" = 95, "bomb" = 95, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 80);
-	density = 0;
-	icon_state = "open";
-	id_tag = "ERT_turret_shutters";
-	locked = 1;
-	name = "ERT Lockdown";
-	opacity = 0
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/specops)
 "jGQ" = (
 /obj/item/radio/intercom{
 	pixel_y = 35
@@ -12462,11 +12262,6 @@
 	},
 /area/centcom/zone2)
 "jSH" = (
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Teleport Room";
-	dir = 4;
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	dir = 10;
 	icon_state = "darkyellow"
@@ -12574,17 +12369,6 @@
 	name = "grass"
 	},
 /area/centcom/zone1)
-"jYo" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Jail 4";
-	dir = 10;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "grimy"
-	},
-/area/centcom/jail)
 "jYJ" = (
 /obj/item/twohanded/required/kirbyplants,
 /turf/unsimulated/floor{
@@ -12711,18 +12495,6 @@
 	icon_state = "swall_s10"
 	},
 /area/shuttle/escape)
-"kdE" = (
-/obj/structure/table/wood,
-/obj/machinery/photocopier/faxmachine,
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 2 Office 7";
-	dir = 4;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/zone2)
 "kdH" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/cans/beer,
@@ -13289,11 +13061,6 @@
 /area/centcom/evac)
 "kyU" = (
 /obj/machinery/vending/cigarette,
-/obj/machinery/camera{
-	c_tag = "CentComm Arrivals 2";
-	dir = 1;
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	icon_state = "whitehall";
 	tag = "icon-floor"
@@ -13541,16 +13308,6 @@
 	icon_state = "rwall0"
 	},
 /area/vox_station)
-"kJk" = (
-/obj/item/twohanded/required/kirbyplants,
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1-4";
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "sepia"
-	},
-/area/centcom/zone1)
 "kKc" = (
 /obj/structure/table/wood,
 /obj/item/clothing/under/color/black{
@@ -13783,16 +13540,6 @@
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
-	},
-/area/centcom/zone2)
-"kSQ" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 2 Office 8";
-	dir = 8;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "darkblue"
 	},
 /area/centcom/zone2)
 "kST" = (
@@ -14731,10 +14478,6 @@
 /obj/structure/sign/poster/official/ue_no{
 	pixel_y = 30
 	},
-/obj/machinery/camera{
-	c_tag = "CentComm Arrivals Bar 2";
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	dir = 8;
 	icon_state = "grimy"
@@ -15194,15 +14937,6 @@
 	icon_state = "darkbrownfull"
 	},
 /area/centcom/specops)
-"lPx" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 2 Check point";
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/zone2)
 "lQx" = (
 /obj/machinery/light/small{
 	brightness_range = 10;
@@ -15490,11 +15224,6 @@
 	pixel_x = -30;
 	req_access = "0";
 	req_access_txt = "110"
-	},
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1 Check point 2";
-	dir = 4;
-	network = list("CentComm")
 	},
 /turf/unsimulated/floor{
 	icon = 'icons/turf/floors/carpet_black.dmi';
@@ -16221,11 +15950,6 @@
 /obj/machinery/photocopier/faxmachine/longrange{
 	department = "Central Command"
 	},
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Director Office";
-	dir = 8;
-	network = list("CentComm")
-	},
 /obj/machinery/status_display{
 	pixel_y = 30
 	},
@@ -16295,16 +16019,6 @@
 	},
 /turf/space,
 /area/space)
-"mGf" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 2 Office 6";
-	dir = 4;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/zone2)
 "mGg" = (
 /obj/effect/overlay/palmtree_r,
 /turf/simulated/floor/beach/sand,
@@ -16323,11 +16037,6 @@
 	name = "Central Command Jail";
 	pixel_y = -25;
 	req_access_txt = "110"
-	},
-/obj/machinery/camera{
-	c_tag = "CentComm Jail Entrance";
-	dir = 10;
-	network = list("CentComm")
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
@@ -16680,15 +16389,6 @@
 	icon_state = "carpet"
 	},
 /area/ussp_ship)
-"mTV" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1";
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "sepia"
-	},
-/area/centcom/zone1)
 "mUB" = (
 /obj/item/gun/energy/toxgun,
 /obj/structure/table/wood,
@@ -17915,14 +17615,6 @@
 	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
-"nLg" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 1-5";
-	dir = 10;
-	network = list("CentComm")
-	},
-/turf/unsimulated/beach/water/deep/dense,
-/area/centcom/zone1)
 "nLt" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable{
@@ -18301,11 +17993,6 @@
 	},
 /area/syndicate_mothership)
 "oeb" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Arrivals Bar";
-	dir = 1;
-	network = list("CentComm")
-	},
 /obj/item/radio/intercom{
 	pixel_y = -30
 	},
@@ -18620,17 +18307,6 @@
 	icon_state = "sepia"
 	},
 /area/ussp_ship)
-"ovq" = (
-/obj/machinery/cryopod/right,
-/obj/machinery/camera{
-	c_tag = "CentComm Black Ops Ready Room";
-	dir = 4;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/blops)
 "ovJ" = (
 /obj/structure/statue/sandstone/assistant,
 /turf/unsimulated/floor{
@@ -18804,11 +18480,6 @@
 /area/wizard_station)
 "oAo" = (
 /obj/structure/reagent_dispensers/oil,
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Medical Block 3";
-	dir = 4;
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -18892,14 +18563,24 @@
 	pixel_x = 10;
 	pixel_y = 10
 	},
-/obj/item/stamp/syndicate,
+/obj/item/stamp/syndicate{
+	pixel_x = 6
+	},
 /obj/item/syndicatedetonator{
 	pixel_x = -6;
-	pixel_y = 10
+	pixel_y = 13
 	},
 /obj/machinery/light/spot{
 	dir = 4;
 	tag = "icon-tube1 (EAST)"
+	},
+/obj/item/paper_bin/syndicate{
+	layer = 2.8;
+	pixel_x = 4;
+	pixel_y = -9
+	},
+/obj/item/folder/red{
+	pixel_x = -6
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -20261,15 +19942,6 @@
 	icon_state = "red"
 	},
 /area/holodeck/source_emptycourt)
-"pAJ" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Jail";
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/jail)
 "pAT" = (
 /obj/effect/decal/warning_stripes/north,
 /turf/unsimulated/floor{
@@ -20682,17 +20354,6 @@
 	icon_state = "carpet"
 	},
 /area/centcom/bridge)
-"pLV" = (
-/obj/structure/reagent_dispensers/water_cooler,
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 2 Office 5";
-	dir = 4;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/zone2)
 "pLZ" = (
 /obj/structure/rack/holorack,
 /obj/item/clothing/shoes/cowboy/white{
@@ -21169,19 +20830,6 @@
 	icon_state = "darkpurple"
 	},
 /area/centcom/specops)
-"qcb" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Special Ops. Armory 2";
-	dir = 1;
-	network = list("CentComm")
-	},
-/obj/structure/sign/poster/official/random{
-	pixel_y = -30
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/specops)
 "qcm" = (
 /obj/item/twohanded/required/kirbyplants,
 /turf/unsimulated/floor{
@@ -21516,17 +21164,6 @@
 "qny" = (
 /turf/simulated/floor/bluegrid,
 /area/tdome/arena)
-"qow" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Ferry Dock";
-	dir = 4;
-	network = list("CentComm")
-	},
-/obj/item/twohanded/required/kirbyplants,
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/ferry)
 "qoQ" = (
 /obj/structure/table/wood,
 /obj/machinery/chem_dispenser/soda/upgraded,
@@ -21668,17 +21305,6 @@
 	tag = "icon-fakewindows2 (WEST)"
 	},
 /area/centcom/evac)
-"qtI" = (
-/obj/structure/filingcabinet/security,
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 2 Office 4";
-	dir = 4;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/zone2)
 "qua" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Раздевалка"
@@ -22378,7 +22004,7 @@
 	dir = 4;
 	tag = "icon-bulb1 (EAST)"
 	},
-/obj/item/twohanded/required/kirbyplants,
+/obj/structure/closet/secure_closet/syndicate_officer,
 /turf/unsimulated/floor{
 	dir = 8;
 	icon = 'icons/turf/floors/carpet_black.dmi';
@@ -22440,11 +22066,6 @@
 	dir = 8;
 	pixel_x = -12;
 	pixel_y = 2
-	},
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Rest Room";
-	dir = 4;
-	network = list("CentComm")
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -22519,11 +22140,32 @@
 	},
 /area/ussp_ship)
 "qYY" = (
-/obj/structure/closet/secure_closet/syndicate_officer,
 /obj/machinery/light/small{
 	dir = 8;
 	tag = "icon-bulb1 (WEST)"
 	},
+/obj/structure/closet/cabinet{
+	armor = list("melee" = 100, "bullet" = 100, "laser" = 100, "energy" = 100, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
+	},
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/gloves/combat,
+/obj/item/radio/headset/syndicate/admin_officer,
+/obj/item/clothing/head/beret,
+/obj/item/clothing/mask/cigarette/cigar/havana,
+/obj/item/clothing/under/syndicate,
+/obj/item/card/id/syndicate/command,
+/obj/item/storage/backpack/syndicate/command,
+/obj/item/gun/projectile/automatic/pistol/deagle/camo,
+/obj/item/storage/backpack,
+/obj/item/pinpointer/advpinpointer,
+/obj/item/storage/box/survival_syndi,
+/obj/item/flashlight,
+/obj/item/reagent_containers/food/snacks/syndidonkpocket,
+/obj/item/ammo_box/magazine/m50,
+/obj/item/ammo_box/magazine/m50,
+/obj/item/clothing/shoes/magboots/syndie/advance,
+/obj/item/lighter/zippo/gonzofist,
+/obj/item/storage/box/matches,
 /turf/unsimulated/floor{
 	dir = 8;
 	icon = 'icons/turf/floors/carpet_black.dmi';
@@ -22945,16 +22587,6 @@
 	icon_state = "darkred"
 	},
 /area/centcom/zone3)
-"roP" = (
-/obj/machinery/camera{
-	c_tag = "CentComm SOF Hallway 2";
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "darkred"
-	},
-/area/centcom/zone3)
 "rpb" = (
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/fernybush,
@@ -23275,11 +22907,6 @@
 	},
 /area/centcom/zone3)
 "rwX" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Jail 6";
-	dir = 5;
-	network = list("CentComm")
-	},
 /obj/structure/chair/comfy/red{
 	color = "#FFFFFF"
 	},
@@ -23977,11 +23604,6 @@
 /area/syndicate_mothership)
 "rUh" = (
 /obj/structure/table/wood,
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 2 Office 3";
-	dir = 1;
-	network = list("CentComm")
-	},
 /obj/structure/sign/poster/official/random{
 	pixel_x = -30
 	},
@@ -24240,17 +23862,6 @@
 /area/ussp_ship)
 "seJ" = (
 /obj/item/flag/nt,
-/turf/unsimulated/floor{
-	icon = 'icons/turf/floors/carpet_black.dmi';
-	icon_state = "carpet"
-	},
-/area/centcom/specops)
-"sfp" = (
-/obj/machinery/camera{
-	c_tag = "CentComm SOF Artillery";
-	network = list("CentComm")
-	},
-/obj/item/twohanded/required/kirbyplants,
 /turf/unsimulated/floor{
 	icon = 'icons/turf/floors/carpet_black.dmi';
 	icon_state = "carpet"
@@ -25036,19 +24647,6 @@
 	icon_state = "white"
 	},
 /area/centcom/zone1)
-"sHO" = (
-/obj/machinery/camera{
-	c_tag = "CentComm SOF Hallway";
-	network = list("CentComm")
-	},
-/obj/structure/sign/poster/official/random{
-	pixel_y = 30
-	},
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "darkred"
-	},
-/area/centcom/zone3)
 "sIa" = (
 /turf/unsimulated/floor{
 	icon = 'icons/obj/smooth_structures/catwalk.dmi';
@@ -25385,17 +24983,6 @@
 	icon_state = "freezerfloor"
 	},
 /area/syndicate_mothership)
-"sUx" = (
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Director Estate";
-	dir = 8;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	dir = 8;
-	icon_state = "woodalt"
-	},
-/area/centcom/specops)
 "sUJ" = (
 /obj/structure/window/reinforced,
 /obj/structure/flora/ausbushes/sunnybush,
@@ -25618,11 +25205,6 @@
 /area/centcom)
 "tgm" = (
 /obj/structure/table/wood/fancy,
-/obj/item/paper_bin/syndicate,
-/obj/item/folder/red{
-	pixel_x = -3;
-	pixel_y = 8
-	},
 /obj/item/pen/multi/gold{
 	pixel_x = -3;
 	pixel_y = -5
@@ -25814,17 +25396,6 @@
 	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
-	},
-/area/centcom/zone3)
-"tnf" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 3 Check point";
-	dir = 1;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	dir = 1;
-	icon_state = "darkred"
 	},
 /area/centcom/zone3)
 "tnq" = (
@@ -26032,11 +25603,6 @@
 	},
 /area/centcom/specops)
 "tvm" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 3 Hallway 2";
-	dir = 1;
-	network = list("CentComm")
-	},
 /obj/machinery/vending/wallmed{
 	name = "Emergency NanoMed";
 	pixel_x = -7;
@@ -26198,11 +25764,6 @@
 "tFM" = (
 /obj/structure/chair{
 	dir = 1
-	},
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 3 Hallway";
-	dir = 1;
-	network = list("CentComm")
 	},
 /obj/structure/sign/poster/official/random{
 	pixel_y = -30
@@ -27182,19 +26743,6 @@
 	tag = "icon-asteroid"
 	},
 /area/holodeck/source_picnicarea)
-"usK" = (
-/obj/structure/chair/office/light{
-	dir = 1
-	},
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 2 Office 2";
-	dir = 1;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/zone2)
 "usQ" = (
 /obj/structure/sign/poster/official/state_laws{
 	pixel_y = 30
@@ -27290,18 +26838,6 @@
 	},
 /area/shuttle/assault_pod)
 "uxf" = (
-/obj/structure/mirror{
-	pixel_y = 30
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/srtops)
-"uyx" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Solar Federation Forces Ready Room";
-	network = list("CentComm")
-	},
 /obj/structure/mirror{
 	pixel_y = 30
 	},
@@ -27625,17 +27161,6 @@
 	icon_state = "dark"
 	},
 /area/centcom/specops)
-"uNO" = (
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Ready Room";
-	dir = 8;
-	network = list("CentComm")
-	},
-/obj/item/flag/nt,
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/specops)
 "uOr" = (
 /obj/machinery/computer/card/centcom,
 /turf/unsimulated/floor{
@@ -27778,11 +27303,6 @@
 /area/syndicate_mothership)
 "uSl" = (
 /obj/machinery/vending/cola/free,
-/obj/machinery/camera{
-	c_tag = "CentComm Jail 5";
-	dir = 10;
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -27897,7 +27417,9 @@
 /area/holodeck/source_meetinghall)
 "uZb" = (
 /obj/structure/table/wood/fancy,
-/obj/item/paper_bin/syndicate,
+/obj/item/paper_bin/syndicate{
+	pixel_x = -4
+	},
 /obj/item/folder/red{
 	pixel_x = 5;
 	pixel_y = 8
@@ -28006,15 +27528,8 @@
 	},
 /area/syndicate_mothership)
 "vcL" = (
-/obj/machinery/door_control{
-	id = "syndicate_bridge";
-	name = "Bridge Blastdoor";
-	pixel_y = 38
-	},
-/obj/machinery/door_control{
-	id = "commandroom";
-	name = "Command Room Blastdoor";
-	pixel_y = 28
+/obj/item/radio/intercom/syndicate{
+	pixel_y = 29
 	},
 /turf/unsimulated/floor{
 	dir = 8;
@@ -29570,11 +29085,6 @@
 /obj/item/radio/intercom/specops{
 	pixel_x = -30
 	},
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Shuttle";
-	dir = 4;
-	network = list("ERT","CentComm")
-	},
 /turf/unsimulated/floor{
 	dir = 10;
 	icon_state = "darkgreynavyblue"
@@ -30299,11 +29809,6 @@
 	},
 /area/centcom/supply)
 "wGP" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Execution Room";
-	dir = 4;
-	network = list("CentComm")
-	},
 /obj/structure/closet/fireaxecabinet{
 	locked = 0;
 	pixel_x = -30
@@ -30653,16 +30158,6 @@
 	icon_state = "dark"
 	},
 /area/centcom/specops)
-"wUd" = (
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Mech Delivery";
-	dir = 8;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/specops)
 "wUM" = (
 /obj/structure/table/wood,
 /obj/item/clothing/accessory/medal/gold{
@@ -30750,6 +30245,10 @@
 "wXO" = (
 /obj/machinery/light,
 /obj/structure/table/reinforced,
+/obj/item/wrench{
+	desc = "���������� �������� ����� ��� ����������� ��������.";
+	layer = 2
+	},
 /turf/unsimulated/floor{
 	dir = 8;
 	icon = 'icons/turf/floors/carpet_black.dmi';
@@ -30780,9 +30279,12 @@
 "wZp" = (
 /obj/structure/rack,
 /obj/item/gun/medbeam,
-/obj/item/storage/firstaid/tactical,
+/obj/item/storage/firstaid/tactical{
+	desc = "Добыта в ходе торговли за важную информацию как бонус сверху."
+	},
 /obj/item/reagent_containers/applicator/dual,
 /obj/item/reagent_containers/applicator/dual,
+/obj/item/storage/firstaid/syndie,
 /turf/unsimulated/floor{
 	icon_state = "darkfull";
 	tag = "icon-dark"
@@ -30907,16 +30409,6 @@
 	icon_state = "carpet"
 	},
 /area/ussp_ship)
-"xcs" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Jail 2";
-	dir = 8;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/jail)
 "xcy" = (
 /obj/structure/closet/crate/can,
 /turf/unsimulated/floor{
@@ -30985,11 +30477,6 @@
 	},
 /area/centcom/specops)
 "xht" = (
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Ready Room 3";
-	dir = 4;
-	network = list("CentComm")
-	},
 /obj/structure/sign/poster/official/safety_report{
 	pixel_x = -30
 	},
@@ -31143,16 +30630,6 @@
 	icon_state = "darkred"
 	},
 /area/centcom/zone3)
-"xmU" = (
-/obj/machinery/camera{
-	c_tag = "CentComm Zone 2 Cargo Supply";
-	dir = 6;
-	network = list("CentComm")
-	},
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/supply)
 "xni" = (
 /obj/structure/noticeboard{
 	pixel_y = 30
@@ -31970,10 +31447,6 @@
 /obj/mecha/combat/marauder/seraph/loaded{
 	operation_req_access = list(109)
 	},
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Armory Level 4";
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	dir = 8;
 	icon_state = "vault"
@@ -32077,9 +31550,7 @@
 	},
 /area/centcom/zone1)
 "xZI" = (
-/obj/structure/chair/comfy/red{
-	dir = 8
-	},
+/obj/structure/chair/comfy/red,
 /obj/effect/landmark{
 	name = "Syndicate Officer"
 	},
@@ -32162,10 +31633,6 @@
 	},
 /area/centcom/jail)
 "yda" = (
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Service Room";
-	network = list("CentComm")
-	},
 /obj/structure/table/wood,
 /obj/item/grenade/clusterbuster/cleaner,
 /obj/item/grenade/clusterbuster/cleaner,
@@ -32211,15 +31678,6 @@
 	},
 /area/centcom/gamma)
 "ydP" = (
-/turf/unsimulated/floor{
-	icon_state = "dark"
-	},
-/area/centcom/gamma)
-"ydY" = (
-/obj/machinery/camera{
-	c_tag = "CentComm ERT Gamma Armory";
-	network = list("CentComm")
-	},
 /turf/unsimulated/floor{
 	icon_state = "dark"
 	},
@@ -42999,7 +42457,7 @@ raO
 raO
 raO
 raO
-cIb
+bsp
 rkr
 wNT
 oil
@@ -66505,7 +65963,7 @@ mkf
 wwc
 hLQ
 veF
-jyD
+bJB
 jyD
 veF
 veF
@@ -66767,7 +66225,7 @@ veF
 veF
 qpw
 rxp
-pLV
+pje
 otJ
 jvL
 vQj
@@ -66779,7 +66237,7 @@ wwc
 wwc
 pXI
 jvL
-qtI
+uEN
 qDR
 qQU
 uEN
@@ -67530,7 +66988,7 @@ wwc
 wwc
 wwc
 kSA
-mGf
+wwc
 wwc
 wwc
 wwc
@@ -68848,7 +68306,7 @@ rcV
 wwc
 erl
 aEO
-usK
+nxX
 veF
 veF
 veF
@@ -69067,7 +68525,7 @@ jyD
 veF
 veF
 veF
-kdE
+jvL
 mBa
 wwc
 jQL
@@ -69628,7 +69086,7 @@ veF
 veF
 veF
 veF
-xmU
+uZN
 uZN
 uZN
 uZN
@@ -71678,7 +71136,7 @@ ubS
 lUG
 lUG
 lUG
-bsp
+pHf
 veF
 wqK
 wFH
@@ -71869,7 +71327,7 @@ pMV
 bAy
 pMV
 ckg
-crq
+aIN
 veF
 duF
 yfA
@@ -71896,7 +71354,7 @@ xcy
 jSE
 wwc
 wwc
-kSQ
+vQj
 lLK
 lLK
 mHq
@@ -73159,7 +72617,7 @@ veF
 veF
 veF
 veF
-eCq
+hjl
 hjl
 veF
 eLm
@@ -73215,7 +72673,7 @@ xmH
 ybJ
 ryN
 ybJ
-tnf
+tLQ
 veF
 veF
 veF
@@ -73439,7 +72897,7 @@ jUn
 jzk
 jzk
 pRk
-lPx
+wwc
 lUG
 mVv
 wwc
@@ -74465,7 +73923,7 @@ veF
 jyD
 veF
 veF
-kJk
+qxF
 bsY
 bsY
 bsY
@@ -76306,7 +75764,7 @@ veF
 veF
 veF
 veF
-pAJ
+cjZ
 cjZ
 cjZ
 cjZ
@@ -76503,7 +75961,7 @@ uqx
 hjl
 hjl
 veF
-fuE
+rDB
 fGG
 hAD
 fxw
@@ -76773,7 +76231,7 @@ veF
 veF
 veF
 veF
-iLZ
+iLU
 bsY
 bsY
 jXk
@@ -77060,7 +76518,7 @@ wjl
 wjl
 wtT
 fRT
-isN
+otf
 lqD
 raL
 otf
@@ -77091,7 +76549,7 @@ cjZ
 rgw
 sBP
 rNH
-jYo
+oyw
 veF
 oyo
 cjZ
@@ -77344,7 +76802,7 @@ yjg
 xaM
 cjZ
 cjZ
-bJB
+cjZ
 veF
 veF
 veF
@@ -77558,7 +77016,7 @@ pMV
 pMV
 qUk
 nCo
-nLg
+qUk
 xvO
 jyD
 jyD
@@ -78315,7 +77773,7 @@ nnH
 nnH
 veF
 veF
-cBz
+iMg
 bsY
 bsY
 jZk
@@ -79161,7 +78619,7 @@ wai
 wai
 wai
 wai
-dJi
+wai
 veF
 "}
 (182,1,1) = {"
@@ -79650,7 +79108,7 @@ vNO
 cjZ
 cjZ
 cjZ
-xcs
+cjZ
 cjZ
 cjZ
 cjZ
@@ -80656,7 +80114,7 @@ jyD
 jyD
 jyD
 xvO
-qow
+vUb
 qDm
 pOT
 pOT
@@ -80691,7 +80149,7 @@ wkH
 uUd
 uUd
 xXH
-jpb
+xXH
 uUd
 uUd
 cFt
@@ -80894,7 +80352,7 @@ veF
 veF
 veF
 veF
-mTV
+bsY
 bsY
 bsY
 xvO
@@ -81698,7 +81156,7 @@ ybJ
 ybJ
 veF
 veF
-uyx
+uxf
 ygs
 ygs
 ygs
@@ -82975,7 +82433,7 @@ jyD
 jyD
 jyD
 veF
-sHO
+iij
 ybJ
 ybJ
 ybJ
@@ -83198,7 +82656,7 @@ nnH
 nnH
 ioO
 veF
-iXG
+xZq
 jsp
 jsp
 jsp
@@ -83515,7 +82973,7 @@ gPt
 veF
 bjs
 bjs
-qcb
+ffI
 veF
 cCY
 qSN
@@ -84522,11 +83980,11 @@ ybJ
 xmH
 veF
 bWt
-sUx
+wpu
 wpu
 uju
 veF
-eQm
+bjs
 bjs
 bjs
 bjs
@@ -85063,7 +84521,7 @@ tKq
 tKq
 tKq
 bjs
-eHk
+hdm
 veF
 sCO
 nEz
@@ -86599,7 +86057,7 @@ veF
 veF
 qxr
 lub
-jGI
+lub
 veF
 veF
 veF
@@ -87087,7 +86545,7 @@ maC
 qXR
 iEK
 xvO
-roP
+tLQ
 ryw
 ybJ
 sdu
@@ -87610,7 +87068,7 @@ sVv
 rhk
 wHp
 wHp
-uNO
+rOy
 vea
 xeW
 hQV
@@ -88122,7 +87580,7 @@ jyD
 jyD
 veF
 vXj
-ovq
+vXj
 vXj
 ual
 yiH
@@ -89917,7 +89375,7 @@ tue
 jyD
 noL
 veF
-sfp
+tRW
 vTv
 vTv
 vTv
@@ -90443,7 +89901,7 @@ bjs
 vUT
 bjs
 bjs
-wUd
+bjs
 bjs
 xGL
 ydP
@@ -90703,7 +90161,7 @@ wJJ
 mzS
 veF
 veF
-ydY
+ydP
 ydP
 ydP
 ydO
